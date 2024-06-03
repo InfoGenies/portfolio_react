@@ -76,6 +76,22 @@ body {
   }
 }
 
+.h3OfHero {
+  font-size: 18px !important;
+}
+
+@media (max-width: 350px) {
+  .heroIphone {
+    width: 400px !important;
+    height: 400px !important;
+  }
+}
+@media (max-width: 320px) {
+  .heroIphone {
+    width: 270px !important;
+    height: 270px !important;
+  }
+}
 
 @media (max-width: 360px) {
   .cardAnimate {
@@ -94,7 +110,7 @@ body {
 
 .activeTab {
   color: white;
-  background-image: linear-gradient(180deg, #E1522D 0%, #f89982ef 100%);
+  background-image: linear-gradient(180deg, #E1522D 0%, #e9795efd 100%);
 }
 .tabs li:not(.activeTab) {
   color: #777;

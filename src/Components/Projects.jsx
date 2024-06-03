@@ -10,8 +10,8 @@ export default function Projects()  {
     const [projects, setProjects] = useState([]);
     const tabs = [
         { id: "Android", label: "Android", onClick: () => handleFilter("Android") },
-        { id: "Flutter", label: "Flutter", onClick: () => handleFilter("flutter") },
-        /* { id: "React&Tailwind", label: "FrameWork", onClick: () => handleFilter("React&Tailwind") }, */
+        { id: "flutter", label: "Flutter", onClick: () => handleFilter("flutter") },
+        { id: "React&Tailwind", label: "FrameWork", onClick: () => handleFilter("React&Tailwind") }
     ];
 
     const getAllProjects = async () => {
@@ -72,7 +72,7 @@ export default function Projects()  {
                             key={tab.id}
                             id={tab.id}
                             onClick={tab.onClick}
-                            className={` skills ${activeBtn === tab.id ? "activeTab" : ""}`}
+                            className={`skills ${activeBtn === tab.id ? "activeTab" : ""}`}
                         >
                             {tab.label}
                         </li>

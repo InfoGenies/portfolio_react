@@ -49,7 +49,7 @@ export default function Journey() {
                                 2014 - 2019
                             </small>
                             <p className="text-gray-700 dark:text-gray-300">
-                            I study in the Department of Information Systems at the College of Computers and Information.
+                            I study in the Department of Information Systems at the Faculty  of Computers and Information Abdel Hamid Mehri (Constantine).
                             </p>
                             <span className="h-0 w-0  sm:group-hover:border-l-[#f4280dc5] dark:md:border-r-transparent group-hover:border-r-[#f4280dc5] sm:group-hover:border-r-transparent transition-all duration-300 absolute top-[35px] z-[1] border-[15px] border-transparent border-r-[#b6b6b6]  dark:border-r-[#2E2E2E] md:border-r-transparent  md:border-l-[#b6b6b6] md:dark:border-l-[#2E2E2E] left-[50.5px] md:left-auto md:right-[21px]"></span>
                         </div>

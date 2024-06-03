@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 
 import Lottie from "lottie-react";
 import done from "../../public/lotifie/lottie.json";
-export default function Contact()  {
+export default function Contact() {
 
 
     const [state, handleSubmit] = useForm("mrgnerga");
@@ -103,7 +103,7 @@ export default function Contact()  {
                         </motion.a>
                         <motion.a
                             target="_blank"
-                            href="https://wa.me/+2001156581025"
+                            href="https://wa.me/+2130557624123"
                             initial={{
                                 opacity: 0,
                             }}
@@ -162,86 +162,18 @@ export default function Contact()  {
                             <FaInstagram size={30} />
                         </motion.a>
                     </div>
-                    <motion.form
-                        onSubmit={handleSubmit}
-                        initial={{ opacity: 0 }}
-                        whileInView={{
-                            opacity: 1,
-                            transition: {
-                                delay: 0.2,
-                            },
-                        }}
-                        className="w-full sm:w-[450px] mt-10 sm:mt-0 flex flex-col gap-4">
-                        <motion.input
-                            required
-                            autoComplete="off"
-                            id="name"
-                            type="text"
-                            whileFocus={{
-                                boxShadow: "0 0 6px orangered ",
-                            }}
-                            placeholder="Full Name"
-                            className="w-full h-[50px] placeholder:text-gray-600 dark:placeholder:text-gray-400 text-xl bg-[#b6b6b6] dark:bg-[#2E2E2E] outline-none rounded pl-4 caret-orange-600"
-                        />
-                        <ValidationError prefix="name" field="name" errors={state.errors} />
-                        <motion.input
-                            required
-                            autoComplete="off"
-                            whileFocus={{
-                                boxShadow: "0 0 6px orangered ",
-                            }}
-                            name="email"
-                            id="email"
-                            type="email"
-                            placeholder="Email"
-                            className="w-full  h-[50px] text-xl placeholder:text-gray-600 dark:placeholder:text-gray-400 bg-[#b6b6b6] dark:bg-[#2E2E2E] outline-none rounded pl-4 caret-orange-600"
-                        />
-                        <ValidationError
-                            prefix="Email"
-                            field="email"
-                            errors={state.errors}
-                        />
-                        <motion.textarea
-                            required
-                            id="message"
-                            name="message"
-                            whileFocus={{
-                                boxShadow: "0 0 6px orangered ",
-                            }}
-                            placeholder="Your Message "
-                            className="h-[200px] w-full placeholder:text-gray-600 dark:placeholder:text-gray-400 pt-4 text-xl resize-none bg-[#b6b6b6] dark:bg-[#2E2E2E] outline-none rounded pl-4 caret-orange-600"></motion.textarea>
-                        <ValidationError
-                            prefix="Message"
-                            field="message"
-                            errors={state.errors}
-                        />
-                        <motion.button
-                            type="submit"
-                            disabled={state.submitting}
-                            whileHover={{
-                                scale: 1.04,
-                                transition: {
-                                    type: "spring",
-                                    stiffness: 220,
-                                    damping: 6,
-                                },
-                            }}
-                            className="w-full disabled:opacity-50 bg-bgGradient text-white  h-[50px] text-2xl rounded">
-                            {state.submitting ? "sending ..." : "Send"}
-                        </motion.button>
-                        {state.succeeded && (
-                            <p
-                                className="absolute -bottom-16 text-center sm:text-lg  flex items-center
-              ">
-                                <Lottie style={{ height: "55px" }} animationData={done} />
-                                Your Message Send Successfully
-                            </p>
-                        )}
-                    </motion.form>
+                    <iframe
+                        title="map"
+                        className="w-full sm:w-[650px] mt-10 sm:mt-0 row-end-2   "
+                        style={{ filter: "opacity(0.7)" }}
+                        src="https://www.google.com/maps/embed/v1/place?q=36.356896,+6.638816&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                    />
                 </div>
             </div>
         </div>
     );
 };
+
+
 
 

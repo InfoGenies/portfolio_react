@@ -7,7 +7,7 @@ export default function ProjectBox({ item }){
             <div className="relative">
                 <img
                     src={item.projectImage}
-                    className="max-w-full w-[-webkit-fill-available] h-[170px] object-contain transition duration-300"
+                    className="max-w-full w-[-webkit-fill-available] h-[200px] object-cover transition duration-300"
                     alt=""
                 />
 

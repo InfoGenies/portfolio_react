@@ -110,10 +110,7 @@ const Footer = () => {
                                 <RiFacebookFill size={20} />
                             </motion.a>
                         </div>
-                        <p className="text-gray-500 dark:text-gray-400 max-w-full">
-                            "Unlocking innovation through stellar front-end development. Ready
-                            to elevate your team's success."
-                        </p>
+                        
                     </div>
                     <ul className="flex flex-col   gap-2  w-full ">
                         {links.map((item) => {

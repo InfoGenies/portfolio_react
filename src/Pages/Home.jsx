@@ -11,7 +11,7 @@ import Services from "../Components/Services";
 export default function Home(){
     return (
       <div>
-        <Hero/>
+      <Hero/>
         <About/>
         <Journey/>
         <Services/>

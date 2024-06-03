@@ -1,6 +1,7 @@
-import HeroImg from "../assets/hero img.png";
+import HeroImg from "../assets/dev.gif";
 
 import { motion } from "framer-motion";
+import { FaWhatsapp } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io";
@@ -20,32 +21,34 @@ export default function Hero() {
     const dataSocial = [
         {
             id: 0,
-            link: "https://www.facebook.com/tata.rayan.5",
             icon: <FaFacebookF />,
             bgColor: "#1877f2",
             show: 2.7,
         },
         {
             id: 1,
-            link: "https://github.com/Mostafa-Rayan1924",
             icon: <FaGithub />,
             bgColor: "#6e5494",
             show: 2.9,
         },
         {
             id: 2,
-            link: "https://www.instagram.com/mostafarayan7/",
             icon: <IoLogoInstagram />,
             bgColor: "#fe3e78",
             show: 3.1,
         },
         {
             id: 3,
-            link: "https://www.linkedin.com/in/mostafa-rayan-86305b247/?fbclid=IwAR0PKgq_1wc3l0TJMIoH6AK9lxbVVgeUZRbrQrXEZuu_bYssTZNhtViJTcM",
             icon: <FaLinkedinIn />,
             bgColor: "#0a66c2",
             show: 3.5,
         },
+        {
+            id: 4,
+            icon: <FaWhatsapp />,
+            bgColor: "#25d366",
+            show: 3.3,
+          },
     ];
     const spanVar = {
         initial: {
@@ -139,7 +142,7 @@ export default function Hero() {
             {/* end circles */}
             <div className="container items-center  flex flex-col-reverse justify-center  lg:flex-row gap-5  mt-[124px] md:mt-[180px] ">
                 {/* left  */}
-                <div className="lg:w-1/2 w-full hero">
+                <div className="lg:w-1/2 w-full hero ">
                     <motion.h3
                         initial={{
                             y: 40,
@@ -282,7 +285,7 @@ export default function Hero() {
                             delay: 1,
                         },
                     }}
-                    className="w-[270px] heroIphone  h-[270px] sm:w-[430px] lg:mr-auto sm:h-[430px] object-cover"
+                    className="w-[270px] heroIphone  h-[270px] sm:w-[430px] lg:mr-auto sm:h-[430px] object-cover pl-24 "
                     src={HeroImg}
                     alt="profile img for hero"
                 />
